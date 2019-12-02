@@ -9,10 +9,11 @@ void setup(){
 }
 
 void draw(){
-  if(myPort.available() > 0){
+	readArduino();
+}
+
+void readArduino(){
+	  if(myPort.available() > 0){
     myString = myPort.readStringUntil('.');
     println(myString);
-  }
-  
-  
 }

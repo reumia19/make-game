@@ -8,6 +8,7 @@ int mySize = 50;
 void setup(){
   myPort = new Serial(this,Serial.list()[1],9600); 
   size(500,300);
+  rectMode(CENTER);
 
 }
 
@@ -25,6 +26,6 @@ void readArduino(){
 }
 
 void drawPlayer(){
-rect(width,height-100,mySize,mySize);
+rect(width/2,height-100,mySize,mySize);
 
 }

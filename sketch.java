@@ -4,6 +4,7 @@ Serial myPort;
 
 int myString = 0;
 int mySize = 50;
+int speed = 1;
 
 void setup(){
   myPort = new Serial(this,Serial.list()[1],9600); 

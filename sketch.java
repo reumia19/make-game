@@ -1,10 +1,10 @@
 import processing.serial.*;
 
 Serial myPort;
-String myString =null;
+int myString = 0;
 
 void setup(){
-  myPort = new Serial(this,"COM3",9600); 
+  myPort = new Serial(this,Serial.list()[1],9600); 
   
 }
 
@@ -14,6 +14,6 @@ void draw(){
 
 void readArduino(){
 	  if(myPort.available() > 0){
-    myString = myPort.readStringUntil('.');
+    myString = myPort.read();
     println(myString);
 }

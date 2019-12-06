@@ -13,7 +13,7 @@ void setup(){
 
 void draw(){
 	readArduino();
-	background();
+	background(0);
 	drawPlayer();
 }
 

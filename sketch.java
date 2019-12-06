@@ -30,7 +30,7 @@ void drawPlayer(){
     rectMode(CENTER);
     noStroke();
     fill(255);
-rect(width/2,height-100,mySize,mySize);
+rect(width/2,225,mySize,mySize);
 
 }
 
@@ -38,6 +38,6 @@ void drawGround(){
     rectMode(CENTER);
     noStroke();
     fill(220,150,150);
-rect(width/2,250,width,50);
+rect(width/2,275,width,mySize);
 
 }

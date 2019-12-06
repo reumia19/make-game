@@ -13,19 +13,31 @@ void setup(){
 }
 
 void draw(){
-	readArduino();
-	background(0);
-	drawPlayer();
+  readArduino();
+  background(200,100,100);
+  drawPlayer();
+  drawGround(); 
 }
 
 void readArduino(){
-	  if(myPort.available() > 0){
+    if(myPort.available() > 0){
     myString = myPort.read();
     println(myString);
 }
 }
 
 void drawPlayer(){
+    rectMode(CENTER);
+    noStroke();
+    fill(255);
 rect(width/2,height-100,mySize,mySize);
+
+}
+
+void drawGround(){
+    rectMode(CENTER);
+    noStroke();
+    fill(220,150,150);
+rect(width/2,250,width,50);
 
 }

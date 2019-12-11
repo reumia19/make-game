@@ -31,7 +31,7 @@ void drawPlayer(){
     rectMode(CENTER);
     noStroke();
     fill(255);
-rect(width/2,225,mySize,mySize);
+rect(width/2,225,mySize/2,mySize);
 
 }
 
